@@ -1,0 +1,20 @@
+$def with (error_msg=None, url=None, short_url=None)
+<h1>Enter the URL you want to shorten below</h1>
+<div id="url_input_div">
+    <form method="post" action="/" id="url_input_form">
+        <label for="url" id="in">URL:</label>
+        <input type="text" id="url" class="url_text" value="" name="url"></input>
+        <input type="submit" id="submit_button" value="Generate URL"></input>
+    </form>
+    
+    $if url:
+        <div id="short_url_info">
+            <label for="out">Short URL:</label>
+            <input type="text" name="out" class="url_text" value="$short_url"></input>
+            <p>Original URL: $url</p>
+        </div>
+    $if error_msg:
+        <div id="short_url_info">
+            <p class="error">$error_msg</p>
+        </div>
+</div>

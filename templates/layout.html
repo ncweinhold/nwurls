@@ -1,0 +1,58 @@
+$def with (content)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Short URL App</title>
+    <meta name="description" content="A basic URL shortener application built using web.py and Google App Engine" />
+    <meta name="keywords" content="url shortener, web.py, app engine, python, url" />
+    <link rel="stylesheet" href="/static/print.css" content="text/css" media="print">
+    <link rel="stylesheet" href="/static/screen.css" content="text/css" media="screen">
+    <link rel="stylesheet" href="/static/style.css" content="text/css" media="screen"/>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"/>
+    
+    <script type="text/javascript" src="/static/yahoo-min.js"></script>
+    <script type="text/javascript" src="/static/dom-min.js"></script>
+    <script type="text/javascript" src="/static/event-min.js"></script>
+    <script type="text/javascript" src="/static/connection-min.js"></script>
+    <script type="text/javascript" src="/static/shortenurl.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="/">Short URL App</a></h1>
+    </div>
+    <div id="content">
+        <div class="container">
+            $content
+            <div id="how" class="span-24">
+                <h2>How To Use</h2>
+                <p>Enter URL that you wish to shorten into the textbox and click the 
+                    Generate URL button. The application will then generate a short URL 
+                    for you to use in text messages, on Twitter, in instant messaging 
+                    applications, or anywhere else you wish to have a short URL. When the
+                    user clicks the link, they'll be taken to the original web site.</p>
+            </div>
+            <div class="span-12">
+                <h2>About</h2>
+                <p>This is a very basic URL shortening application created by Nick Weinhold in order to 
+                    gain more experience in developing user-friendly web applications.</p>
+                <p>Whilst the site does work, it should not be considered 'fully 
+                    functional' and it is not intended to be a replacement for URL 
+                    shortening services such as bit.ly or TinyURL.</p>
+            </div>
+            <div class="span-12 last">
+                <h2>Technologies Used</h2>
+                <p>This site was created using the Python web framework web.py and Google 
+                    App Engine. The site uses a mixture of handwritten CSS and the 
+                    Blueprint CSS framework for styling and layout. Javascript is a 
+                    mixture of handwritten Javascript and the Yahoo YUI 2 framework.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="footer_text">Powered by web.py and Google App Engine</p>
+    </div>
+</body>
+</html>
+    
